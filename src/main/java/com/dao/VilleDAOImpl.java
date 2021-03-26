@@ -17,6 +17,7 @@ public class VilleDAOImpl{
 		this.connexion = connexion;
 	}
 
+
 	public List<String> getListeVille() {
 		 Statement statement = null;
 	     ResultSet resultat = null;

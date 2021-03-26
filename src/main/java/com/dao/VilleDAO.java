@@ -16,21 +16,12 @@ public class VilleDAO {
 	 * @throws DaoException 
 	 */
 	public static VilleDAOImpl getImpl() throws DaoException {
-		String connectionURL = "jdbc:mysql://localhost:3306/villefrance"; 
-		// load driver
-		try {
-			Class.forName("com.mysql.jdbc.Driver");
-		} catch (ClassNotFoundException e2) {
-			throw new DaoException("Impossible de se connected à la base de données");
-			//e2.printStackTrace();
-		}
 		
 		// connexion BD
 		Connection connexion = null;
 		try {
-			//Connection connection = DriverManager.getConnection(connectionURL, "root", "");
-			connexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/villefrance?user=root&password=");
-			connexion.setAutoCommit(false);
+			connexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/maven", "root", "");
+			//connexion.setAutoCommit(false);
 		} catch (SQLException e1) {
 			throw new DaoException("Impossible de se connected à la base de données");
 			//e1.printStackTrace();
