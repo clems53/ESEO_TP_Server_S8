@@ -35,5 +35,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/cleme/Desktop/ESEO/I2/Logiciel/mysql-connector-java-5.1.39.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cleme/eclipse/java-2019-12/eclipse/lombok-1.18.18.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
